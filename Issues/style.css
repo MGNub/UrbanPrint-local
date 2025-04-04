@@ -242,6 +242,8 @@ header .container .parentSticky {
 
 .childSticky p {
     position : sticky;
+    display : flex;
+    align-items : center;
     /* top : 7rem; */
     font-size : 1.8rem;
     color : white;
