@@ -1,0 +1,65 @@
+body {
+    overflow-y : hidden;
+}
+
+main {
+    position : absolute;
+    top : 100vh;
+}
+
+main section {
+    background : var(--white);
+    height : 100vh;
+    width : 100vw;
+    border-top : solid black 2px;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    text-align : center;
+}
+
+main section h2 p {
+    overflow : hidden;
+    font-size : 6.5cqw;
+}
+
+main section:nth-child(1) {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    text-align : center;
+}
+
+main section:nth-child(2n) {
+    background : var(--blue);
+    color : var(--white);
+}
+
+main section:nth-child(1) div {
+    max-width : 60vw;
+    display : flex;
+    flex-direction : column;
+    gap : 2rem;
+}
+
+main section:nth-child(1) h2 {
+    height : fit-content;
+    border-bottom : solid 3px var(--blue);
+    overflow : hidden;
+}
+
+footer {
+    border-top : solid black 2px;
+}
+
+.show {
+    transform : translateY(0) !important;
+    opacity : 1 !important;
+}
+
+.hidden {
+    transform : translateY(50%);
+    opacity : 0;
+    transition : all 0.4s ease-in-out;
+}
