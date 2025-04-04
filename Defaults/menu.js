@@ -9,7 +9,7 @@ function shift() {
 }
 
 let menuList = document.querySelectorAll('.item');
-const pageList = ["../index.html", "../Issues/issues.html", "../Solutions/solutions.html", "../About/about.html"];
+const pageList = ["/UrbanPrint-local/index.html", "/UrbanPrint-local/Issues/issues.html", "/UrbanPrint-local/Solutions/solutions.html", "/UrbanPrint-local/About/about.html"];
 
 menuList.forEach((el, i) => { 
   el.addEventListener('click', () => {
@@ -41,5 +41,5 @@ setTimeout(() => {
 
 
 document.querySelector('.logo').addEventListener('click', () => {
-  window.open("../index.html", "_self");
+  window.open("/UrbanPrint-local/index.html", "_self");
 });
